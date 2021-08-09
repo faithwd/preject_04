@@ -4,55 +4,49 @@ body {
     padding: 0;
     height: 100%;
     width: 100%;
-    background: url(../img/01.png) no-repeat center;
+    background: url(../img/01.jpg) no-repeat;
     background-size: cover;
-}
-
-.box {
-    position: relative;
-    height: 200px;
-    background-color: rgba(81, 169, 252, 0.2);
-    top: 260px;
 }
 
 .layui-main {
     position: absolute;
-    height: 300px;
-    top: -62px;
-}
-
-.layui-main img {
     width: 200px;
     height: 200px;
-    border-radius: 50%;
+    top: 90px;
+    left: 420px;
 }
 
 .layui-main span {
-    display: inline-block;
-    color: rgb(250, 235, 235, 0.7);
-    font-size: 45px;
-    font-weight: 300px;
-    height: 300px;
-    line-height: 300px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.layui-main img {
+    width: 55px;
+    height: 55px;
+    border-radius: 30px;
 }
 
 .loginBox {
     width: 400px;
     height: 310px;
-    background-color: rgb(250, 240, 240, 0.8);
+    background-color: #fff;
     position: absolute;
-    left: 85%;
-    top: 80%;
-    transform: translate(-80%, -70%);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 10px;
 }
 
 .title-box {
     width: 400px;
     text-align: center;
-    color: rgb(52, 229, 241);
-    font-size: 30px;
+    color: rgb(15, 187, 240);
+    font-size: 25px;
     letter-spacing: 5px;
+    margin-top: 15px;
 }
 
 .reg-box {

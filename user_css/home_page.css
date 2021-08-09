@@ -1,0 +1,14 @@
+ul {
+    display: flex;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+li {
+    width: 400px;
+    height: 400px;
+    ;
+}

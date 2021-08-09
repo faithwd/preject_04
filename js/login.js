@@ -31,19 +31,21 @@ $(function() {
         }
     })
 
-    // 监听注册事件
+    // 监听注册表单事件
     $('#form_reg').on('submit', function(e) {
+        // 阻止默认提交行为
         e.preventDefault();
         var data = {
             username: $('#form_reg [name=username]').val(),
             password: $('#form_reg [name=password]').val(),
         }
-        $.post('http://ajax.frontend.itheima.net/api/reguser', data,
+        $.post('/api/reguser', data,
             function(res) {
-                if (res.status !== 0) {
+                if (res.status !== 1) {
                     return layer.msg(res.message)
                 }
                 layer.msg('注册成功，请登录');
+                // 模拟人的点击行为
                 $('#link_login').click();
             })
     })
@@ -52,19 +54,20 @@ $(function() {
     $('#form_login').submit(function(e) {
         e.preventDefault();
         $.ajax({
-            url: 'http://ajax.frontend.itheima.net/api/login',
             method: 'post',
+            url: '/api/login',
             // 快速获取表单中数据
             data: $(this).serialize(),
             success: function(res) {
-                if (res.status !== 0) {
+                if (res.status !== 1) {
                     return layer.msg('登录失败');
                 }
                 // 将登录成功的token字符串保存到localStorage中
                 layer.msg('登录成功');
+                // 将登录成功后的值存到本地存储
                 localStorage.setItem('token', res.token);
                 // 跳转到后台主页
-                location.href = '../index.html';
+                location.href = '../html/index.html';
             }
         })
     })

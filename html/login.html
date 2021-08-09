@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>网站信息管理登录页面</title>
+    <title>文章管理登录页面</title>
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../lib/layui/css/layui.css">
 </head>
@@ -13,20 +13,19 @@
 <body>
     <div class="box">
         <div class="layui-main">
-            <img src="../img/02.jpg" alt="">
-            <span>网站信息管理平台</span>
+            <img src="../img/02.png" alt="" /> &nbsp;&nbsp;&nbsp;
+            <span> 文章管理系统  </span>
         </div>
-
         <!-- 登录注册 -->
         <div class="loginBox">
-            <div class="title-box">管理登录</div>
+            <div class="title-box">用户登录 Login</div>
             <!-- 登录 -->
             <div class="login-box">
                 <!-- 登录表单 -->
                 <form class="layui-form" id="form_login">
                     <div class="layui-form-item">
                         <i class="layui-icon layui-icon-username"></i>
-                        <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名" autocomplete="on" class="layui-input"/>
+                        <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名" autocomplete="on" class="layui-input" />
                     </div>
                     <div class="layui-form-item">
                         <i class="layui-icon layui-icon-password"></i>
@@ -55,7 +54,7 @@
                     </div>
                     <div class="layui-form-item">
                         <i class="layui-icon layui-icon-password"></i>
-                        <input type="password" name="repassword|" required lay-verify="required | pass |repwd " placeholder="再次确认密码" autocomplete="on" class="layui-input"  />
+                        <input type="password" name="password" required lay-verify="required | pass |repwd " placeholder="再次确认密码" autocomplete="on" class="layui-input" />
                     </div>
                     <div class="layui-form-item">
                         <!-- 表单提交按钮和普通按钮的区别 lay-submit属性 -->
